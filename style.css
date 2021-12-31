@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: url("background.png");
+}
+#timer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 100vh;
+  color: rgb(224, 224, 224);
+  padding-inline: 1rem;
+}
+.timer-title {
+  font-size: 3rem;
+}
+.timer {
+  font-size: 1.5rem;
+}
+.num {
+  font-size: 2rem;
+}
