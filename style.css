@@ -16,7 +16,7 @@
   padding-inline: 1rem;
 }
 .timer-title {
-  font-size: 3rem;
+  font-size: clamp(1.9rem, 4vw, 3rem);
 }
 .timer {
   font-size: 1.5rem;
