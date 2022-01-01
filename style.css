@@ -24,7 +24,7 @@
   width: 85vw;
   min-height: 40vh;
   position: relative;
-  padding: 0.5rem;
+  padding: 1.5rem;
   z-index: 1;
 }
 .container::before {
