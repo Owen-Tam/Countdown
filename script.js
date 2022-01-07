@@ -47,4 +47,7 @@ const tick = function () {
     timerText.textContent = "Timer has ended; Happy New Year!";
   }
 };
+tick();
 setInterval(tick, 1000);
+console.log(":( made this for 2022 but could only enjoy it for 3 minutes");
+console.log("Let me know if you came across this message");
