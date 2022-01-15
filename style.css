@@ -1,10 +1,15 @@
+:root {
+  --main-color: rgb(224, 224, 224);
+  --background-color: rgb(26, 26, 26);
+  --button-color: rgb(255, 38, 0);
+}
 * {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background: url("background.png");
   background-attachment: fixed;
 }
+
 #timer {
   text-align: center;
   display: flex;
@@ -12,7 +17,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  color: rgb(224, 224, 224);
+  color: var(--main-color);
   padding-inline: 4vw;
 }
 .container {
@@ -24,19 +29,29 @@
   width: 70vw;
   min-height: 40vh;
   position: relative;
-  padding: 1.5rem;
+  padding: 1.8rem;
   z-index: 1;
+  background-color: var(--background-color);
+  transition: background-color 300ms;
 }
-.container::before {
-  content: "";
+.bg {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgb(26, 26, 26);
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
+  background: url("background.png");
+  cursor: none;
+  transition: opacity 300ms;
 }
+.bg2 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background: url("background4.png");
+  cursor: none;
+}
+
 /* .container::before {
   content: "";
   position: absolute;
@@ -59,4 +74,17 @@
 }
 .num {
   background: transparent;
+}
+.button {
+  padding: 10px;
+  border: solid var(--button-color);
+  color: var(--button-color);
+  position: absolute;
+  border-radius: 10px;
+  bottom: 2%;
+  right: 5%;
+  cursor: pointer;
+}
+.button:hover {
+  background: rgba(255, 38, 0, 0.178);
 }
