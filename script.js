@@ -2,7 +2,7 @@
 const timerText = document.querySelector(".timer");
 const timer = document.querySelector("#timer");
 const header = document.querySelector(".timer-title");
-
+const timerMsg = document.querySelector(".timerMsg");
 const nowForYear = new Date();
 //nowForYear.getFullYear()
 const westNewYear = new Date(`January 1, ${nowForYear.getFullYear() + 1}`);
@@ -48,12 +48,15 @@ const tick = function (toYear) {
           mins * 60
       )
     );
+    timerText.classList.remove("hidden");
+    timerMsg.classList.add("hidden");
     numDays.textContent = days;
     numHours.textContent = hours;
     numMins.textContent = mins;
     numSecs.textContent = secs;
   } else {
-    timerText.textContent = "Timer has ended; Happy New Year!";
+    timerText.classList.add("hidden");
+    timerMsg.classList.remove("hidden");
   }
 };
 tick(westNewYear);

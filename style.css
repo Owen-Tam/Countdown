@@ -88,3 +88,6 @@
 .button:hover {
   background: rgba(255, 38, 0, 0.178);
 }
+.hidden {
+  display: none;
+}
