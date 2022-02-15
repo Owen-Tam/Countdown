@@ -6,7 +6,7 @@ const timerMsg = document.querySelector(".timerMsg");
 const nowForYear = new Date();
 //nowForYear.getFullYear()
 const westNewYear = new Date(`January 1, ${nowForYear.getFullYear() + 1}`);
-const chiNewYear = new Date("February 1, 2022");
+const chiNewYear = new Date("January 22, 2023");
 const numDays = document.querySelector(".num-days");
 const numHours = document.querySelector(".num-hours");
 const numMins = document.querySelector(".num-mins");
